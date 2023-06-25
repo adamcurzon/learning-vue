@@ -1,28 +1,25 @@
+<script setup>
+import NavMenu from './components/NavMenu.vue';
+</script>
+
+
 <template>
-  <HelloWorld msg="Adam Curzon"/>
-  <MagicButton></MagicButton>
+  <div id="app">
+    <NavMenu />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import MagicButton from './components/MagicButton.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-    MagicButton
-}
+  name: 'App'
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+  font-family: sans-serif;
 }
 </style>

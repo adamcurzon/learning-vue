@@ -1,15 +1,13 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <NavMenu />
+    <h1>Home Page</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'HomePage'
 }
 </script>
 
