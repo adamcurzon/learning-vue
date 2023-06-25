@@ -1,5 +1,5 @@
 <template>
-    <button class="magic-button">Click Me</button>
+    <button @click="magicAlert" class="magic-button">Click Me</button>
 </template>
 
 <script>
@@ -7,6 +7,11 @@ export default {
     name: 'MagicButton',
     props: {
 
+    },
+    methods: {
+        magicAlert () {
+            alert("magic");
+        }
     }
 }
 </script>
