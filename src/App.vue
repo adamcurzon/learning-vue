@@ -1,16 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="Adam Curzon"/>
+  <MagicButton></MagicButton>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import MagicButton from './components/MagicButton.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    MagicButton
+}
 }
 </script>
 
