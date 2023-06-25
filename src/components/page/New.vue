@@ -5,9 +5,7 @@
   </template>
   
   <script>
-  export default {
-    name: 'NewPage',
-  }
+  export default {}
   </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
