@@ -8,6 +8,9 @@ const store = createStore({
     }
   },
   mutations: {
+    storeInfo (state, payload){
+        state.api_data = payload;
+    },
     increment (state) {
       state.count++
     },
