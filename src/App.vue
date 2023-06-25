@@ -13,7 +13,7 @@ import NavMenu from './components/NavMenu.vue';
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 
@@ -21,5 +21,7 @@ export default {
 body {
   margin: 0;
   font-family: sans-serif;
+  text-align: center;
 }
+
 </style>

@@ -19,6 +19,7 @@ nav {
     background-color: #ddd;
     display: flex;
     gap: 30px;
+    justify-content: center;
 }
 nav a {
     padding: 0px 50px;
