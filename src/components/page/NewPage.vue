@@ -1,15 +1,17 @@
+<script setup>
+  import apiView from "../apiView.vue";</script>
 <template>
     <div class="hello">
       <h1>New Page!!!</h1>
-      {{ apiData }}
-      <button @click="getApiInfo">Get api info</button>
+      <pre v-if="apiData">{{ apiData }}</pre>
+      <pre v-if="!apiData">No data</pre>
+      <button @click="getApiInfo">Reload data</button>
     </div>
   </template>
   
   <script>
   import api from "../../api.js";
   import {mapMutations} from 'vuex';
-
   export default {
     methods: {
       ...mapMutations([
@@ -24,7 +26,7 @@
       apiData () {
         return this.$store.state.api_data
       }
-    }
+    },
   }
   </script>
   

@@ -23,5 +23,11 @@ body {
   font-family: sans-serif;
   text-align: center;
 }
+pre {
+  text-align: left;
+  width: 400px;
+  background-color: #EFEFEF;
+  margin: 20px auto;
+}
 
 </style>
