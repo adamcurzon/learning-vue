@@ -12,8 +12,7 @@ class InfoController extends Controller
       $data = [
         "name" => "learning-vue test api",
         "description" => "Example api endpoint",
-        "time" => NOW(),
-        "locale" => Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? Locale::getDefault())
+        "time" => NOW()
       ];
 
       return $data;
