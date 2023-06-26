@@ -2,7 +2,7 @@
   import apiView from "../apiView.vue";</script>
 <template>
     <div class="hello">
-      <h1>New Page!!!</h1>
+      <h1>New Page</h1>
       <apiView :data="apiData"></apiView>
       <pre v-if="!apiData">No data</pre>
       <button @click="getApiInfo">Reload data</button>
