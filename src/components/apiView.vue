@@ -1,5 +1,5 @@
 <template>
-    <pre>{{ getData }}</pre>
+    <pre>{{ data }}</pre>
 </template>
 
 <script>

@@ -3,7 +3,7 @@
 <template>
     <div class="hello">
       <h1>New Page!!!</h1>
-      <pre v-if="apiData">{{ apiData }}</pre>
+      <apiView :data="apiData"></apiView>
       <pre v-if="!apiData">No data</pre>
       <button @click="getApiInfo">Reload data</button>
     </div>
@@ -27,6 +27,9 @@
         return this.$store.state.api_data
       }
     },
+    mounted() {
+      console.log("Mounted");
+    }
   }
   </script>
   
