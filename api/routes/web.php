@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/cookie', [UserController::class, 'cookie']);
+Route::get('api/cookie', [UserController::class, 'cookie']);
