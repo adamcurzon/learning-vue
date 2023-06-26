@@ -1,24 +1,25 @@
 # learning-vue
 
 ## Project setup
+### Clone repo
+```
+git clone https://github.com/adamcurzon/learning-vue.git
+```
+### Install node packages
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
+### Builds vue
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Install composer dependencies
 ```
-npm run lint
+cd /api && composer install
 ```
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
