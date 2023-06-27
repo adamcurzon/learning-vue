@@ -30,7 +30,7 @@ class UserController extends Controller
             // Access token
             'access_token' => "456"
         ];
-        $response->withCookie(cookie('name', 'MyValue', $minutes));
+
         $jwt = JWT::encode($payload, $this->key, 'HS256');
         var_dump($jwt);
 

@@ -4,7 +4,8 @@ import { createStore } from 'vuex'
 const store = createStore({
   state () {
     return {
-      count: 0
+      count: 0,
+      theme: "dark"
     }
   },
   mutations: {
@@ -16,6 +17,9 @@ const store = createStore({
     },
     reset(state){
         state.count = 0;
+    },
+    changeTheme(state, theme) {
+      state.theme = theme;
     }
   }
 })

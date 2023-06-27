@@ -2,6 +2,9 @@
 import NavMenu from './components/NavMenu.vue';
 </script>
 
+<style>
+  @import './assets/css/global.css';
+</style>
 
 <template>
   <div id="app">
@@ -11,7 +14,6 @@ import NavMenu from './components/NavMenu.vue';
 </template>
 
 <script>
-
 export default {
   name: 'App',
 }
