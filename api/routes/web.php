@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 Route::get('api/cookie', [UserController::class, 'cookie']);
 Route::get('api/pdf', [InfoController::class, 'pdfTest']);
+Route::get('api/truefalse', [InfoController::class, 'trueFalse']);

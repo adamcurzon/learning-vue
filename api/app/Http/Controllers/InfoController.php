@@ -25,4 +25,8 @@ class InfoController extends Controller
         $pdf = Pdf::loadView('pdf');
         return $pdf->stream('invoice.pdf');
     }
+
+    public function trueFalse(): string {
+        return round(rand(0,1)) == 1 ? "false" : "true";
+    }
 }

@@ -3,6 +3,7 @@
     <router-link to="/">Home</router-link>
     <router-link to="/new">New Page</router-link>
     <router-link to="/pdf">PDF</router-link>
+    <router-link to="/form">Form</router-link>
     <button @click="toggleTheme">Toggle Theme</button>
   </nav>
 </template>

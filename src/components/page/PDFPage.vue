@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>PDF Page</h1>
-    <a href="http://localhost:8000/api/pdf">Download PDF</a>
+    <a :href="source1">Download PDF</a>
     <vue-pdf-embed align="center" width="800" :source="source1"/>
   </div>
 </template>
@@ -9,6 +9,8 @@
 <script>
 import {mapMutations} from 'vuex';
 import VuePdfEmbed from 'vue-pdf-embed'
+
+
 
 export default {
   components: {
@@ -18,11 +20,18 @@ export default {
     ...mapMutations([
       'storeInfo'
     ]),
+    getUrl() {
+      if(location.host === "localhost:8080") {
+        return "http://localhost:8000";
+      } else {
+        return "";
+      }
+    }
   },
   computed: {},
   data() {
     return {
-      source1: 'http://localhost:8000/api/pdf',
+      source1: this.getUrl()+'/api/pdf',
     }
   }
 }
