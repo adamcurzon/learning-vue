@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\InfoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('api/cookie', [UserController::class, 'cookie']);
+Route::get('api/pdf', [InfoController::class, 'pdfTest']);

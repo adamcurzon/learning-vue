@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
-use Locale;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\App;
 
 class InfoController extends Controller
 {
@@ -16,5 +18,11 @@ class InfoController extends Controller
       ];
 
       return $data;
+    }
+
+    public function pdfTest(): Response
+    {
+        $pdf = Pdf::loadView('pdf');
+        return $pdf->stream('invoice.pdf');
     }
 }
